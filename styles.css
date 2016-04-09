@@ -1,0 +1,86 @@
+body {
+    transition: all 0.2s ease;
+}
+
+#buttons {
+    text-align: center;
+}
+
+button {
+    width: 21%;
+    height: 60px;
+    margin: 4px 3px;
+    background-color: #ff4575;
+    font-size: 30px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    border: 5px #4442AB;
+}
+
+#mitte-buttons {
+    margin: auto;
+}
+
+button.faktor {
+    background-color: #66d1ff;
+}
+
+button.undo {
+    background-color: #FF09F7;
+}
+
+button.miss {
+    background-color: rgb(187, 187, 187);
+}
+
+button.mitte {
+    width: 40%;
+    background-color: #50F14A;
+}
+
+@media screen and (min-width: 768px) {
+    button:hover {
+        opacity: 0.5;
+    }
+}
+
+button.aktiviert {
+    background-color: #3880ff;
+}
+
+label#punkte {
+    color: #2994ff;
+    font-size: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: right;
+}
+
+label#punkte-string {
+    font-size: 25px;
+    color: green;
+    margin-left: 3%;
+}
+
+div#daten {
+    width: 100%;
+    height: 70px;
+}
+
+@keyframes test {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+button.anim {
+    animation-name: test;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Darts</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="model.js"></script>
+    <script src="controller.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+<body onload="init()">
+
+<div id="daten">
+    <label id="punkte-string"></label>
+    <label id="punkte"></label>
+</div>
+
+<div id="buttons">
+    <button onclick="undo()" class="undo">&lt;&lt;&lt;</button>
+    <button onclick="wurf(0, this)" class="miss">0</button>
+    <button onclick="setFaktor(2, this)" class="faktor">x 2</button>
+    <button onclick="setFaktor(3, this)" class="faktor">x 3</button>
+
+    <button onclick="wurf(1, this)">1</button>
+    <button onclick="wurf(2, this)">2</button>
+    <button onclick="wurf(3, this)">3</button>
+    <button onclick="wurf(4, this)">4</button>
+    <button onclick="wurf(5, this)">5</button>
+    <button onclick="wurf(6, this)">6</button>
+    <button onclick="wurf(7, this)">7</button>
+    <button onclick="wurf(8, this)">8</button>
+    <button onclick="wurf(9, this)">9</button>
+    <button onclick="wurf(10, this)">10</button>
+    <button onclick="wurf(11, this)">11</button>
+    <button onclick="wurf(12, this)">12</button>
+    <button onclick="wurf(13, this)">13</button>
+    <button onclick="wurf(14, this)">14</button>
+    <button onclick="wurf(15, this)">15</button>
+    <button onclick="wurf(16, this)">16</button>
+    <button onclick="wurf(17, this)">17</button>
+    <button onclick="wurf(18, this)">18</button>
+    <button onclick="wurf(19, this)">19</button>
+    <button onclick="wurf(20, this)">20</button>
+    <div id="mitte-buttons">
+        <button onclick="wurf(25, this)" class="mitte">25</button>
+        <button onclick="wurf(50, this)" class="mitte">50</button>
+    </div>
+</div>
+<div id="controls"></div>
+</body>
+</html>
